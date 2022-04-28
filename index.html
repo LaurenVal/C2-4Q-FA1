@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Q4 FA1</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"> </script>
+</head>
+
+<body>
+  <form id="signUp" onsubmit="return info()" onreset="resetInfo()">
+
+    <fieldset form="signUp">
+      <legend>Sign Up</legend>
+      
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name"     onblur="blurEvent(event)" onfocus="focusEvent(event)">
+    </br>
+    
+      <label for="gender">Gender</label>
+        <select name="gender" id="gender" onblur="blurEvent(event)" onfocus="focusEvent(event)">
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+    </select><br>
+
+      <label for="userName">Preferred Username</label>
+      <input type="text" name="userName" id="user" onblur="blurEvent(event)" onfocus="focusEvent(event)"><br>
+    
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" onblur="blurEvent(event)" onfocus="focusEvent(event)">
+      <br>
+    
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" onblur="blurEvent(event)">
+      <br>
+    
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address" onblur="blurEvent(event)" onfocus="focusEvent(event)">
+      <br>
+
+      <label for="interests">Please write a short paragraph on your interests.</label><br>
+      <textarea name="interests" id="interests" rows="4" cols="50" onblur="blurEvent(event)" onfocus="focusEvent(event)"> </textarea>
+      <br><br>
+
+      <input type="submit" value="Submit Form"><br>
+      <input type="reset" value="Reset Form"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Sign In Details</legend>
+      <div id="info"> </div>
+    </fieldset>
+  </form>
+
+
+</body>
+
+</html>
